@@ -8,6 +8,7 @@ TagManager:
   - nextline
   - spike
   - coin
+  - enemy
   layers:
   - Default
   - TransparentFX

@@ -6,11 +6,13 @@ public class PointGenerator : MonoBehaviour
 {
     public GameObject coin;
     public GameObject lifes;
+    public GameObject enemy;
 
     void Start()
     {
         InvokeRepeating ("CreateCoin",2f,6.5f);
         InvokeRepeating ("CreateLifes",2f,6f);
+        InvokeRepeating("CreateEnemy",2f,6.5f);
     }
 
     void CreateCoin(){
@@ -19,6 +21,10 @@ public class PointGenerator : MonoBehaviour
 
     void CreateLifes(){
         Instantiate(lifes);
+    }
+
+    void CreateEnemy(){
+        Instantiate(enemy);
     }
 
     void Update()

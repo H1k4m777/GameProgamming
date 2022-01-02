@@ -37,18 +37,18 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\script\HealthScript.cs" />
+     <Compile Include="Assets\script\SoundManager.cs" />
      <Compile Include="Assets\script\SpikeGenerator.cs" />
      <Compile Include="Assets\script\LifesScript.cs" />
      <Compile Include="Assets\script\PlayerScript.cs" />
      <Compile Include="Assets\script\CoinScript.cs" />
+     <Compile Include="Assets\script\MusicPause.cs" />
+     <Compile Include="Assets\script\GUIScript.cs" />
      <Compile Include="Assets\script\SpikeScript.cs" />
      <Compile Include="Assets\script\PointGenerator.cs" />
-     <Compile Include="Assets\script\HitEffect.cs" />
-     <Compile Include="Assets\script\GUIScript.cs" />
      <Compile Include="Assets\script\SoundScript.cs" />
-     <Compile Include="Assets\script\MusicPause.cs" />
-     <Compile Include="Assets\script\SoundManager.cs" />
-     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
+     <Compile Include="Assets\script\HitEffect.cs" />
+     <Compile Include="Assets\script\EnemyScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

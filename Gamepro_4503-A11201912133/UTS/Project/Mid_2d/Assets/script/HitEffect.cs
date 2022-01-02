@@ -21,6 +21,15 @@ public class HitEffect : MonoBehaviour
         }
         
     }
+
+    void OnTriggerEnter2D(Collider2D colli){
+        if(colli.gameObject.CompareTag("enemy"))
+        {
+            Invoke("EnableBlink",0f);
+            Invoke("DisableBlink",0.1f);  
+        }
+    }
+
     void EnableBlink(){
         blink.SetActive(true);
         players.SetActive(false);

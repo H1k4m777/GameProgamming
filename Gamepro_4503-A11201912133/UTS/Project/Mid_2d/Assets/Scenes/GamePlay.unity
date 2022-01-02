@@ -944,6 +944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: {fileID: 4287363518595372876, guid: efb0651ed0f377b468e4f5e2cb949374, type: 3}
   lifes: {fileID: 3945722984262818058, guid: 7f9a8ccee66430e43aec1088599f80aa, type: 3}
+  enemy: {fileID: 5813351280400321897, guid: bed3010969ad9bc4aad70ed2ad942e1e, type: 3}
 --- !u!212 &1072236369
 SpriteRenderer:
   m_ObjectHideFlags: 0
