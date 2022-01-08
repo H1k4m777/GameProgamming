@@ -56,7 +56,7 @@ public class PlayerScript : MonoBehaviour
         }
 
         if(isAlive==false){
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
