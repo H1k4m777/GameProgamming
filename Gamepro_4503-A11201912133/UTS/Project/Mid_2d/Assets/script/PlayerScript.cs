@@ -9,12 +9,14 @@ public class PlayerScript : MonoBehaviour
     public SpikeScript spikeScript;
     public float JumpForce;
 
-    float score;
+    public static float score;
 
     [SerializeField]
-    bool isGrounded = false;
+    private bool isGrounded = false;
     public static bool isAlive = true;
     public static bool khacing;
+
+    public bool god;
 
     Rigidbody2D RB;
 
@@ -53,9 +55,11 @@ public class PlayerScript : MonoBehaviour
             }
             
             ScoreTxt.text = "SCORE : " + score.ToString("0");
+            
         }
 
         if(isAlive==false){
+            PlayerPrefs.SetFloat("Highscore",score);
             SceneManager.LoadScene("GameOver");
         }
     }
@@ -70,7 +74,7 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
-        if(collision.gameObject.CompareTag("spike"))
+        if(collision.gameObject.CompareTag("spike") && god == false)
         {
             HealthScript.health -=1;
                 

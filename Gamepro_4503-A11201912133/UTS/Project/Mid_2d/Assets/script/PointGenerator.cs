@@ -10,9 +10,9 @@ public class PointGenerator : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating ("CreateCoin",2f,6.5f);
-        InvokeRepeating ("CreateLifes",2f,6f);
-        InvokeRepeating("CreateEnemy",2f,6.5f);
+        InvokeRepeating ("CreateCoin",6f,7f);
+        InvokeRepeating ("CreateLifes",12f,12f);
+        InvokeRepeating("CreateEnemy",2f,4f);
     }
 
     void CreateCoin(){

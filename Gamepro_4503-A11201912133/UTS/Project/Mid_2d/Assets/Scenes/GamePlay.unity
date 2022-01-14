@@ -1661,6 +1661,7 @@ MonoBehaviour:
   spikeScript: {fileID: 0}
   JumpForce: 800
   isGrounded: 0
+  god: 0
   ScoreTxt: {fileID: 1276282574}
   cash: {fileID: 1613113079}
 --- !u!114 &1534924885
